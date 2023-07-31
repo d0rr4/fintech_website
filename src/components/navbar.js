@@ -9,6 +9,8 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  //the navbar looks good, you could create a component for every touchable link for example if you wanna excerise
+  //i like it that it's reactive to phones as well :D nice
   return (
     <nav className="bg-white">
       <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">

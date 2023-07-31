@@ -1,6 +1,10 @@
 import Head from "next/head";
 
 const ContentCreation = () => {
+  /* This is actually a nice link. If you create the smaller component as I said
+in about here you can reuseit. Seems more or less similar. Maybe you can pass 
+as props some tailwind properties if needed. But I think would be quite neat
+to create a smaller component for text entries */
   return (
     <div className="bg-gradient-to-b from-blue-900 to-blue-600 min-h-screen">
       <Head>

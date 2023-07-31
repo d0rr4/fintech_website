@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 const Developers = () => {
+  // Same as in content-creation
   return (
     <div className="bg-gradient-to-b from-blue-900 to-blue-600 min-h-screen">
       <Head>

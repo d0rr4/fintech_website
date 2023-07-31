@@ -2,6 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 
 const About = () => {
+  /*
+ each "card" (the white div) can be created as a separate component and from there 
+ in this document you could just pass the text. I think that'd be nice
+ */
   return (
     <div className="bg-gradient-to-b from-blue-900 to-blue-600 min-h-screen">
       <Head>
