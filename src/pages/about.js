@@ -1,57 +1,34 @@
 import Head from "next/head";
-import Image from "next/image";
+import Slideshow from "./slideshow";
 
 const About = () => {
-  /*
- each "card" (the white div) can be created as a separate component and from there 
- in this document you could just pass the text. I think that'd be nice
- */
+
   return (
-    <div className="bg-gradient-to-b from-blue-900 to-blue-600 min-h-screen">
-      <Head>
-        <title>About Us</title>
-      </Head>
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl text-white text-center font-bold mb-8">
-          About Us
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-white rounded-lg p-4">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Community</h2>
-            <p className="text-gray-800">
-              Creating a community of student interested in exploring the
-              intersection between finances and technology
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-4">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              Learning Experience
-            </h2>
-            <p className="text-gray-800">
-              Providing students with a hands-on learning experience (technical
-              skills: writing non-trivial software, non-technical skills:
-              conducting research and publishing papers) (more from a student
-              organisation perspective)
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-4">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              New Fintech
-            </h2>
-            <p className="text-gray-800">
-              Producing new pieces (non)/fintech software and providing relevant
-              publications, forecasts, objective opinions about the fintech
-              industry (more from a “corporate” point of view)
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-4">
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              Mentorship
-            </h2>
-            <p className="text-gray-800">
-              Establishing a cross generation mentorship program: older students
-              with more experience are paired up with younger students
-            </p>
+    <div id="about">
+      <div className="min-h-screen flex flex-col md:flex-row">
+        <div className="absolute w-full h-full flex justify-center items-center flex-col bg-white bg-opacity-40 p-8">
+          <Head>
+            <title>About Us</title>
+          </Head>
+          <div className="ribbon bg-lightBlue bg-opacity-80 h-40 w-full absolute mt-[-8rem]"></div>
+          <div className="flex container mx-auto relative md:px-8 md:py-8 z-10 mt-[-8rem]">
+            <div className="md:flex md:justify-start mb-4 absolute">
+                  <Slideshow />
+            </div>
+            <div className="md:flex md:justify-end">
+              <div className="bg-white md:p-10 w-1/2 relative border-t-4 border-finRed">
+                <div className="custom-border"></div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-darkBlue">
+                  About Us
+                </h2>
+                <p className="md:text-1xl text-darkBlue">
+                We are a newly founded project within IB&CM Society. Our aim is to create
+                a community of students interested in exploring the intersection between
+                finances and technology and also to provide students with a hands-on
+                learning experience
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

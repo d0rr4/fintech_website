@@ -16,7 +16,9 @@ module.exports = {
       },
       colors: {
         darkBlue: '#1f203D',
-        lightBlue: '#B4D6FC'
+        lightBlue: '#B4D6FC',
+        finRed: '#521A25',
+        finGrey: '#e8e8e8',
       },
       // fontFamily: {
       //   sans: ['Russo One', ...defaultTheme.fontFamily.sans],
